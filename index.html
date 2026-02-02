@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Divga Tech Solution - Solusi Teknologi untuk Perusahaan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+        
+        .section-title {
+            position: relative;
+            padding-bottom: 10px;
+        }
+        
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: #2a5298;
+            border-radius: 2px;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header & Navigation -->
+    <header class="gradient-bg text-white sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center">
+                    <div class="bg-white text-blue-900 font-bold text-xl p-2 rounded-lg mr-3">DTS</div>
+                    <h1 class="text-2xl font-bold">Divga Tech Solution</h1>
+                </div>
+                
+                <nav class="hidden md:block">
+                    <ul class="flex space-x-8">
+                        <li><a href="#home" class="hover:text-blue-300 transition-colors">Beranda</a></li>
+                        <li><a href="#services" class="hover:text-blue-300 transition-colors">Layanan</a></li>
+                        <li><a href="#portfolio" class="hover:text-blue-300 transition-colors">Portofolio</a></li>
+                        <li><a href="#team" class="hover:text-blue-300 transition-colors">Tim</a></li>
+                        <li><a href="#contact" class="hover:text-blue-300 transition-colors">Kontak</a></li>
+                    </ul>
+                </nav>
+                
+                <button class="md:hidden text-white">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg text-white py-16 md:py-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Transformasi Digital untuk <span class="text-yellow-300">Perusahaan Anda</span></h1>
+                    <p class="text-lg mb-8 text-gray-200">Divga Tech Solution menyediakan solusi teknologi inovatif untuk membantu perusahaan berkembang lebih efisien, produktif, dan kompetitif di era digital.</p>
+                    <div class="flex space-x-4">
+                        <a href="#portfolio" class="bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition-colors">Lihat Portofolio</a>
+                        <a href="#contact" class="bg-transparent border-2 border-white hover:bg-white hover:text-blue-900 text-white font-bold py-3 px-6 rounded-lg transition-colors">Hubungi Kami</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="bg-white bg-opacity-10 p-6 rounded-2xl backdrop-blur-sm border border-white border-opacity-20">
+                        <img src="https://cdn.pixabay.com/photo/2018/05/18/15/30/web-design-3411373_1280.jpg" alt="Tech Illustration" class="rounded-lg shadow-2xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 section-title">Layanan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan berbagai solusi teknologi untuk mengoptimalkan operasional bisnis dan meningkatkan produktivitas perusahaan.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-blue-50 p-8 rounded-xl card-hover border border-blue-100">
+                    <div class="bg-blue-100 text-blue-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-laptop-code text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Pengembangan Sistem Kustom</h3>
+                    <p class="text-gray-600">Kami mengembangkan sistem perangkat lunak yang disesuaikan dengan kebutuhan spesifik perusahaan Anda.</p>
+                </div>
+                
+                <div class="bg-green-50 p-8 rounded-xl card-hover border border-green-100">
+                    <div class="bg-green-100 text-green-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Konsultasi Transformasi Digital</h3>
+                    <p class="text-gray-600">Bantuan ahli dalam merencanakan dan mengimplementasikan transformasi digital untuk bisnis Anda.</p>
+                </div>
+                
+                <div class="bg-purple-50 p-8 rounded-xl card-hover border border-purple-100">
+                    <div class="bg-purple-100 text-purple-800 w-16 h-16 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Dukungan & Pemeliharaan</h3>
+                    <p class="text-gray-600">Layanan dukungan berkelanjutan dan pemeliharaan sistem untuk memastikan operasional yang lancar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 section-title">Portofolio Sistem</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Berikut adalah beberapa sistem yang telah kami kembangkan untuk membantu perusahaan berkembang lebih baik.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-blue-500 to-blue-700 flex items-center justify-center">
+                        <i class="fas fa-file-medical-alt text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sistem RME (Rekam Medik Elektronik)</h3>
+                        <p class="text-gray-600 mb-4">Sistem digital untuk mengelola rekam medis pasien secara elektronik dengan keamanan data yang terjamin.</p>
+                        <span class="inline-block bg-blue-100 text-blue-800 text-sm font-medium px-3 py-1 rounded-full">Kesehatan</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-green-500 to-green-700 flex items-center justify-center">
+                        <i class="fas fa-calculator text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sistem Akuntansi</h3>
+                        <p class="text-gray-600 mb-4">Sistem komprehensif untuk mengelola pembukuan, laporan keuangan, dan transaksi bisnis.</p>
+                        <span class="inline-block bg-green-100 text-green-800 text-sm font-medium px-3 py-1 rounded-full">Keuangan</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-purple-500 to-purple-700 flex items-center justify-center">
+                        <i class="fas fa-users text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sistem Kepegawaian</h3>
+                        <p class="text-gray-600 mb-4">Sistem untuk mengelola data karyawan, pengembangan karir, dan administrasi kepegawaian.</p>
+                        <span class="inline-block bg-purple-100 text-purple-800 text-sm font-medium px-3 py-1 rounded-full">HR</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-yellow-500 to-yellow-600 flex items-center justify-center">
+                        <i class="fas fa-fingerprint text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sistem Presensi & Pengolahan Gaji</h3>
+                        <p class="text-gray-600 mb-4">Sistem terintegrasi untuk presensi karyawan dan perhitungan penggajian otomatis.</p>
+                        <span class="inline-block bg-yellow-100 text-yellow-800 text-sm font-medium px-3 py-1 rounded-full">HR & Keuangan</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-red-500 to-red-700 flex items-center justify-center">
+                        <i class="fas fa-warehouse text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sistem Inventory (Gudang)</h3>
+                        <p class="text-gray-600 mb-4">Sistem untuk mengelola stok barang, pemesanan, dan distribusi produk di gudang.</p>
+                        <span class="inline-block bg-red-100 text-red-800 text-sm font-medium px-3 py-1 rounded-full">Logistik</span>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover">
+                    <div class="h-48 bg-gradient-to-r from-indigo-500 to-indigo-700 flex items-center justify-center">
+                        <i class="fas fa-hard-hat text-white text-6xl"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-3">Sistem Perencanaan Pembangunan (RAB)</h3>
+                        <p class="text-gray-600 mb-4">Sistem untuk merencanakan dan menganggarkan proyek pembangunan secara komprehensif.</p>
+                        <span class="inline-block bg-indigo-100 text-indigo-800 text-sm font-medium px-3 py-1 rounded-full">Konstruksi</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4 section-title">Tim Pengembang</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Tim profesional kami siap membantu mewujudkan solusi teknologi untuk bisnis Anda.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <!-- Team Member 1 -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center card-hover border border-gray-200">
+                    <div class="w-32 h-32 bg-gradient-to-r from-blue-500 to-blue-700 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-5xl font-bold">
+                        K
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Kasum</h3>
+                    <p class="text-blue-600 font-medium mb-4">Programmer</p>
+                    <p class="text-gray-600 mb-4">Ahli dalam pengembangan sistem full-stack dengan pengalaman lebih dari 5 tahun di berbagai proyek teknologi.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-gray-800 hover:text-gray-600"><i class="fab fa-github text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center card-hover border border-gray-200">
+                    <div class="w-32 h-32 bg-gradient-to-r from-green-500 to-green-700 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-5xl font-bold">
+                        F
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Fitran Zain Nur Abduh</h3>
+                    <p class="text-green-600 font-medium mb-4">Akuntan</p>
+                    <p class="text-gray-600 mb-4">Spesialis keuangan dengan sertifikasi akuntan profesional, berpengalaman dalam sistem akuntansi digital.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-red-500 hover:text-red-700"><i class="fas fa-envelope text-xl"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="bg-gray-50 rounded-xl p-8 text-center card-hover border border-gray-200">
+                    <div class="w-32 h-32 bg-gradient-to-r from-purple-500 to-purple-700 rounded-full mx-auto mb-6 flex items-center justify-center text-white text-5xl font-bold">
+                        P
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Panji Setiawan</h3>
+                    <p class="text-purple-600 font-medium mb-4">Marketing</p>
+                    <p class="text-gray-600 mb-4">Ahli strategi pemasaran digital dengan kemampuan komunikasi yang luar biasa untuk menjangkau klien.</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin text-xl"></i></a>
+                        <a href="#" class="text-blue-400 hover:text-blue-600"><i class="fab fa-twitter text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 section-title">Hubungi Kami</h2>
+                <p class="text-gray-200 max-w-2xl mx-auto">Kami siap membantu perusahaan Anda bertransformasi digital. Hubungi kami untuk konsultasi gratis.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6">Informasi Kontak</h3>
+                    
+                    <div class="mb-8">
+                        <div class="flex items-start mb-6">
+                            <div class="bg-blue-800 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Alamat</h4>
+                                <p class="text-gray-200">Desa Pucang, Banjarnegara, Jawa Tengah, Indonesia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-blue-800 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Email</h4>
+                                <p class="text-gray-200">info@divgatech.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start mb-6">
+                            <div class="bg-blue-800 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg mb-1">Telepon</h4>
+                                <p class="text-gray-200">+62 812 3456 7890</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <h4 class="font-bold text-lg mb-4">Ikuti Kami</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="bg-blue-800 hover:bg-blue-900 p-3 rounded-lg transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="bg-blue-800 hover:bg-blue-900 p-3 rounded-lg transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="bg-blue-800 hover:bg-blue-900 p-3 rounded-lg transition-colors">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="bg-blue-800 hover:bg-blue-900 p-3 rounded-lg transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white bg-opacity-10 p-8 rounded-2xl backdrop-blur-sm border border-white border-opacity-20">
+                    <h3 class="text-2xl font-bold mb-6">Kirim Pesan</h3>
+                    <form id="contactForm">
+                        <div class="mb-6">
+                            <label for="name" class="block mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" required class="w-full p-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white" placeholder="Nama Anda">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block mb-2">Email</label>
+                            <input type="email" id="email" required class="w-full p-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white" placeholder="email@contoh.com">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block mb-2">Pesan</label>
+                            <textarea id="message" rows="5" required class="w-full p-3 rounded-lg bg-white bg-opacity-20 border border-white border-opacity-30 text-white" placeholder="Pesan Anda..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-yellow-500 hover:bg-yellow-600 text-gray-900 font-bold py-3 px-6 rounded-lg transition-colors">
+                            Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-white text-blue-900 font-bold text-xl p-2 rounded-lg mr-3">DTS</div>
+                        <h2 class="text-2xl font-bold">Divga Tech Solution</h2>
+                    </div>
+                    <p class="text-gray-400">Solusi teknologi inovatif untuk perkembangan perusahaan.</p>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-gray-400">© 2023 Divga Tech Solution. All rights reserved.</p>
+                    <p class="text-gray-400 mt-1">Desa Pucang, Banjarnegara</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="backToTop" class="fixed bottom-6 right-6 bg-blue-700 text-white p-3 rounded-full shadow-lg hover:bg-blue-800 transition-colors hidden">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTopButton.classList.remove('hidden');
+            } else {
+                backToTopButton.classList.add('hidden');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih! Pesan Anda telah berhasil dikirim. Tim kami akan segera menghubungi Anda.');
+            this.reset();
+        });
+        
+        // Mobile menu toggle (simple implementation)
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-full');
+            nav.classList.toggle('left-0');
+            nav.classList.toggle('w-full');
+            nav.classList.toggle('gradient-bg');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('shadow-lg');
+            
+            if (!nav.classList.contains('hidden')) {
+                const ul = nav.querySelector('ul');
+                ul.classList.remove('flex', 'space-x-8');
+                ul.classList.add('flex', 'flex-col', 'space-y-4');
+            }
+        });
+    </script>
+</body>
+</html>
